@@ -29,7 +29,7 @@ export default defineComponent({
           responsive: true,
           title: {
             display: true,
-            text: "Number Of Genres",
+            text: "Rate Of Books",
             fontColor: "white",
             fontSize: 27,
           },
@@ -39,6 +39,19 @@ export default defineComponent({
               fontSize: 18,
             },
           },
+          scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true,
+                    fontColor: "white"
+                },
+            }],
+          xAxes: [{
+                ticks: {
+                    fontColor: "white"
+                },
+            }]
+        } 
         },
       },
     };
@@ -68,7 +81,7 @@ export default defineComponent({
             pointHoverBorderWidth: 1,
             pointRadius: 3,
             fill: false,
-            borderWidth: 4,
+            borderWidth: 1,
           },
         ],
       };
